@@ -1,0 +1,21 @@
+{
+  "sha256": "5930d79f3e09fd0aceef06efa883b04273d1f5d1555ad265c20055287e59ebda",
+  "image": "blank_pattern.png",
+  "synthetic": true,
+  "note": "Simulated prebuilt-read output generated from the sample text; not a recorded Azure response.",
+  "analyzeResult": {
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-read",
+    "content": "",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "width": 800,
+        "height": 400,
+        "unit": "pixel",
+        "lines": [],
+        "words": []
+      }
+    ]
+  }
+}

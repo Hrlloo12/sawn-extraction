@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-text_ok",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "ok",
+  "input_type": "text",
+  "input_url": null,
+  "final_url": null,
+  "office_name": {
+    "raw_value": "مكتب واحة التجربة للاستقدام",
+    "normalized_value": "مكتب واحة التجربة للاستقدام",
+    "source": "text",
+    "evidence": {
+      "snippet": "مكتب واحة التجربة للاستقدام",
+      "section": null,
+      "line": 1,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "license_number": {
+    "raw_value": "١٠١٢٣٤٥",
+    "normalized_value": "1012345",
+    "source": "text",
+    "evidence": {
+      "snippet": "ترخيص وزارة الموارد البشرية رقم ١٠١٢٣٤٥",
+      "section": null,
+      "line": 2,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "٠٥٥ ٠٠٠ ٠١٠١",
+      "normalized_value": "+966550000101",
+      "source": "text",
+      "evidence": {
+        "snippet": "جوال وواتساب: ٠٥٥ ٠٠٠ ٠١٠١",
+        "section": null,
+        "line": 5,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "٠٥٥ ٠٠٠ ٠١٠١",
+      "normalized_value": "+966550000101",
+      "source": "text",
+      "evidence": {
+        "snippet": "جوال وواتساب: ٠٥٥ ٠٠٠ ٠١٠١",
+        "section": null,
+        "line": 5,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "email",
+      "platform": null,
+      "raw_value": "info@waha-test.example",
+      "normalized_value": "info@waha-test.example",
+      "source": "text",
+      "evidence": {
+        "snippet": "البريد: info@waha-test.example",
+        "section": null,
+        "line": 6,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [],
+  "error": null,
+  "timing_ms": {
+    "read": 4,
+    "extract": 13,
+    "total": 17
+  }
+}

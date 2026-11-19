@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-url_attribution_unclear",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "ok",
+  "input_type": "url",
+  "input_url": "http://127.0.0.1:8100/ads/ad07_jusoor.html",
+  "final_url": "http://127.0.0.1:8100/ads/ad07_jusoor.html",
+  "office_name": {
+    "raw_value": "مكتب جسور التجربة للاستقدام",
+    "normalized_value": "مكتب جسور التجربة للاستقدام",
+    "source": "page_text",
+    "evidence": {
+      "snippet": "مكتب جسور التجربة للاستقدام",
+      "section": "unknown",
+      "line": 4,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "license_number": null,
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "0580000707",
+      "normalized_value": "+966580000707",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "جوال: 0580000707",
+        "section": "unknown",
+        "line": 6,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "unclear",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [
+    {
+      "type": "toll_free",
+      "platform": null,
+      "raw_value": "920000111",
+      "normalized_value": "+966920000111",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "الدعم الفني: 920000111",
+        "section": "unknown",
+        "line": 7,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "platform",
+      "confidence": "medium"
+    },
+    {
+      "type": "toll_free",
+      "platform": null,
+      "raw_value": "800 111 0000",
+      "normalized_value": "+9668001110000",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "خدمة العملاء 800 111 0000",
+        "section": "unknown",
+        "line": 8,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "platform",
+      "confidence": "medium"
+    }
+  ],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [
+    {
+      "code": "contact_attribution_unclear",
+      "message": "تعذّر التأكد أن هذه القناة تعود للمعلن",
+      "field": "contacts[0]"
+    }
+  ],
+  "error": null,
+  "timing_ms": {
+    "read": 17,
+    "extract": 7,
+    "total": 24
+  }
+}

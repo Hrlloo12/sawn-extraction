@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-text_no_office_name",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "partial",
+  "input_type": "text",
+  "input_url": null,
+  "final_url": null,
+  "office_name": null,
+  "license_number": null,
+  "contacts": [
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "0530000404",
+      "normalized_value": "+966530000404",
+      "source": "text",
+      "evidence": {
+        "snippet": "للتواصل واتساب 0530000404",
+        "section": null,
+        "line": 3,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [
+    {
+      "code": "office_name_not_found",
+      "message": "لم يُعثر على اسم مكتب واضح في المدخل",
+      "field": "office_name"
+    }
+  ],
+  "error": null,
+  "timing_ms": {
+    "read": 0,
+    "extract": 2,
+    "total": 2
+  }
+}

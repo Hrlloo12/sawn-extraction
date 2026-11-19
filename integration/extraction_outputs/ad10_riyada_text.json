@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-ad10_riyada_text",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "ok",
+  "input_type": "text",
+  "input_url": null,
+  "final_url": null,
+  "office_name": {
+    "raw_value": "مكتب استقدام الريادة التجريبي",
+    "normalized_value": "مكتب استقدام الريادة التجريبي",
+    "source": "text",
+    "evidence": {
+      "snippet": "مكتب استقدام الريادة التجريبي",
+      "section": null,
+      "line": 1,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "medium"
+  },
+  "license_number": null,
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "0550001010",
+      "normalized_value": "+966550001010",
+      "source": "text",
+      "evidence": {
+        "snippet": "جوال: 0550001010 / 0570002020",
+        "section": null,
+        "line": 2,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "0570002020",
+      "normalized_value": "+966570002020",
+      "source": "text",
+      "evidence": {
+        "snippet": "جوال: 0550001010 / 0570002020",
+        "section": null,
+        "line": 2,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "0570002020",
+      "normalized_value": "+966570002020",
+      "source": "text",
+      "evidence": {
+        "snippet": "واتساب: 0570002020",
+        "section": null,
+        "line": 3,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [],
+  "error": null,
+  "timing_ms": {
+    "read": 0,
+    "extract": 3,
+    "total": 3
+  }
+}

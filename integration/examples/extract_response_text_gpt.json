@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.2",
+  "request_id": "1a7c74332bdb46e48110d9bd4c952f16",
+  "extractor": {
+    "name": "gpt",
+    "model": "gpt-5-mini",
+    "requested": "gpt",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "ok",
+  "input_type": "text",
+  "input_url": null,
+  "final_url": null,
+  "office_name": {
+    "raw_value": "مكتب ريشة الصباح للاستقدام",
+    "normalized_value": "مكتب ريشة الصباح للاستقدام",
+    "source": "text",
+    "evidence": {
+      "snippet": "مكتب ريشة الصباح للاستقدام",
+      "section": null,
+      "line": 1,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "license_number": null,
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "٠٥٠ ٠٠٠ ٠٠٧١",
+      "normalized_value": "+966500000071",
+      "source": "text",
+      "evidence": {
+        "snippet": "للاستفسار: ٠٥٠ ٠٠٠ ٠٠٧١",
+        "section": null,
+        "line": 3,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "+966 50 999 0505",
+      "normalized_value": "+966509990505",
+      "source": "text",
+      "evidence": {
+        "snippet": "واتساب الحجز: +966 50 999 0505",
+        "section": null,
+        "line": 4,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "website",
+      "platform": null,
+      "raw_value": "https://reeshat-sabah.example/contact",
+      "normalized_value": "reeshat-sabah.example/contact",
+      "source": "text",
+      "evidence": {
+        "snippet": "الموقع: https://reeshat-sabah.example/contact",
+        "section": null,
+        "line": 5,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [
+    {
+      "raw_value": "SA96 0088 0000 0000 0000 9001",
+      "normalized_value": "SA9600880000000000009001",
+      "checksum_valid": true,
+      "source": "text",
+      "evidence": {
+        "snippet": "SA96 0088 0000 0000 0000 9001",
+        "section": null,
+        "line": 7,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "confidence": "high"
+    }
+  ],
+  "account_holder": {
+    "raw_value": "ماجد ع.",
+    "normalized_value": "ماجد ع.",
+    "source": "text",
+    "evidence": {
+      "snippet": "اسم صاحب الحساب: ماجد ع.",
+      "section": null,
+      "line": 8,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high",
+    "holder_type": "person"
+  },
+  "payment": {
+    "payment_request": {
+      "value": true,
+      "evidence": [
+        {
+          "text": "لتأكيد الحجز اليوم، حوّلوا العربون على الآيبان التالي:",
+          "source": "text",
+          "evidence": {
+            "snippet": "لتأكيد الحجز اليوم، حوّلوا العربون على الآيبان التالي:",
+            "section": null,
+            "line": 6,
+            "bbox": null,
+            "ocr_confidence": null,
+            "href": null
+          }
+        },
+        {
+          "text": "SA96 0088 0000 0000 0000 9001",
+          "source": "text",
+          "evidence": {
+            "snippet": "SA96 0088 0000 0000 0000 9001",
+            "section": null,
+            "line": 7,
+            "bbox": null,
+            "ocr_confidence": null,
+            "href": null
+          }
+        }
+      ]
+    },
+    "personal_account": {
+      "value": true,
+      "evidence": [
+        {
+          "text": "اسم صاحب الحساب: ماجد ع.",
+          "source": "text",
+          "evidence": {
+            "snippet": "اسم صاحب الحساب: ماجد ع.",
+            "section": null,
+            "line": 8,
+            "bbox": null,
+            "ocr_confidence": null,
+            "href": null
+          }
+        }
+      ]
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": [
+      {
+        "text": "لتأكيد الحجز اليوم،",
+        "source": "text",
+        "evidence": {
+          "snippet": "لتأكيد الحجز اليوم، حوّلوا العربون على الآيبان التالي:",
+          "section": null,
+          "line": 6,
+          "bbox": null,
+          "ocr_confidence": null,
+          "href": null
+        }
+      }
+    ]
+  },
+  "warnings": [],
+  "error": null,
+  "timing_ms": {
+    "read": 2,
+    "extract": 11118,
+    "total": 11120
+  }
+}

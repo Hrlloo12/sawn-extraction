@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-ad09_sidra_text",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "ok",
+  "input_type": "text",
+  "input_url": null,
+  "final_url": null,
+  "office_name": {
+    "raw_value": "مكتب سدرة التجربة للاستقدام",
+    "normalized_value": "مكتب سدرة التجربة للاستقدام",
+    "source": "text",
+    "evidence": {
+      "snippet": "مكتب سدرة التجربة للاستقدام",
+      "section": null,
+      "line": 1,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "license_number": null,
+  "contacts": [
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "0500000909",
+      "normalized_value": "+966500000909",
+      "source": "text",
+      "evidence": {
+        "snippet": "واتساب: 0500000909",
+        "section": null,
+        "line": 2,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "toll_free",
+      "platform": null,
+      "raw_value": "920000111",
+      "normalized_value": "+966920000111",
+      "source": "text",
+      "evidence": {
+        "snippet": "للدعم الفني للمنصة: 920000111",
+        "section": null,
+        "line": 3,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "unclear",
+      "confidence": "medium"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [
+    {
+      "code": "contact_attribution_unclear",
+      "message": "تعذّر التأكد أن هذه القناة تعود للمعلن",
+      "field": "contacts[1]"
+    }
+  ],
+  "error": null,
+  "timing_ms": {
+    "read": 1,
+    "extract": 3,
+    "total": 3
+  }
+}

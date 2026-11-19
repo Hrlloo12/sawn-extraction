@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-url_fetch_failed",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "unreadable",
+  "input_type": "url",
+  "input_url": "http://127.0.0.1:8100/broken",
+  "final_url": "http://127.0.0.1:8100/broken",
+  "office_name": null,
+  "license_number": null,
+  "contacts": [],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [],
+  "error": {
+    "code": "fetch_failed",
+    "message": "تعذّر فتح الصفحة (HTTP 500)",
+    "suggestion": "upload_image"
+  },
+  "timing_ms": {
+    "read": 5,
+    "extract": 0,
+    "total": 5
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "office_name": "مكتب ريشة الصباح للاستقدام",
+  "phones": [
+    "966500000071",
+    "966509990505"
+  ],
+  "urls": [
+    "reeshat-sabah.example"
+  ],
+  "ibans": [
+    "SA9600880000000000009001"
+  ],
+  "account_holder": "ماجد ع.",
+  "personal_account": true,
+  "new_account_claim": false,
+  "urgency_phrases": [
+    "لتأكيد الحجز اليوم،"
+  ],
+  "payment_request": true,
+  "ocr_urls": [],
+  "unconfirmed": []
+}

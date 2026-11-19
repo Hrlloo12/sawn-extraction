@@ -1,0 +1,119 @@
+[
+  {
+    "id": "h01_najm",
+    "text": "🌟 عرض خاص من مؤسسة نجم الشمال التجريبية للاستقدام 🌟\nعاملات من الفلبين خلال 45 يوم\n📞 0551112233\n📲 واتس 0551112234\nترخيص الوزارة: 6012345",
+    "expected": {
+      "office_name": "مؤسسة نجم الشمال التجريبية للاستقدام",
+      "license_number": "6012345",
+      "contacts": [
+        {"type": "mobile", "value": "+966551112233"},
+        {"type": "whatsapp", "value": "+966551112234"}
+      ]
+    }
+  },
+  {
+    "id": "h02_amana",
+    "text": "للتنازل عاملة كينية - مكتب الأمانة التجريبي\nالتواصل على الرقم ٠٥٠١٢٣٤٥٦٧ واتس فقط",
+    "expected": {
+      "office_name": "مكتب الأمانة التجريبي",
+      "license_number": null,
+      "contacts": [{"type": "whatsapp", "value": "+966501234567"}]
+    }
+  },
+  {
+    "id": "h03_alnoor",
+    "text": "Al Noor Demo Manpower Co.\nWe provide housemaids & drivers\nTel: 011-234-5678 | Mobile: 0567778899\nVisit alnoor-demo.example",
+    "expected": {
+      "office_name": "Al Noor Demo Manpower Co.",
+      "license_number": null,
+      "contacts": [
+        {"type": "landline", "value": "+966112345678"},
+        {"type": "mobile", "value": "+966567778899"},
+        {"type": "website", "value": "alnoor-demo.example"}
+      ]
+    }
+  },
+  {
+    "id": "h04_wafa",
+    "text": "مكتب الوفاء التجريبي لاستقدام العمالة المنزلية\nللحجز: 0598887766 أو 0533334444\nايميل: wafa-demo@mail.example",
+    "expected": {
+      "office_name": "مكتب الوفاء التجريبي لاستقدام العمالة المنزلية",
+      "license_number": null,
+      "contacts": [
+        {"type": "mobile", "value": "+966598887766"},
+        {"type": "mobile", "value": "+966533334444"},
+        {"type": "email", "value": "wafa-demo@mail.example"}
+      ]
+    }
+  },
+  {
+    "id": "h05_rowad",
+    "text": "شركة الرواد التجريبية للاستقدام - فرع جدة\nخدمة العملاء: 920012345\nواتساب الحجز 0541239876",
+    "expected": {
+      "office_name": "شركة الرواد التجريبية للاستقدام",
+      "license_number": null,
+      "contacts": [
+        {"type": "toll_free", "value": "+966920012345", "attribution": "advertiser"},
+        {"type": "whatsapp", "value": "+966541239876"}
+      ]
+    }
+  },
+  {
+    "id": "h06_noname",
+    "text": "استقدام عاملات بأسعار منافسة\nرقم الجوال +966-50-555-6677",
+    "expected": {
+      "office_name": null,
+      "license_number": null,
+      "contacts": [{"type": "mobile", "value": "+966505556677"}]
+    }
+  },
+  {
+    "id": "h07_diyar",
+    "text": "مكتب ديار التجربة للاستقدام\nسناب chat: diyar.demo\nانستقرام @diyar_demo\nتويتر: https://twitter.com/diyar_demo",
+    "expected": {
+      "office_name": "مكتب ديار التجربة للاستقدام",
+      "license_number": null,
+      "contacts": [
+        {"type": "social", "value": "@diyar.demo", "platform": "snapchat"},
+        {"type": "social", "value": "@diyar_demo", "platform": "instagram"},
+        {"type": "social", "value": "@diyar_demo", "platform": "x"}
+      ]
+    }
+  },
+  {
+    "id": "h08_salam",
+    "text": "مؤسسة السلام للاستقدام (تجريبي)\nرخصة رقم 7012345\nللاستفسار اتصل على 0112223344 او واتساب 0556667788",
+    "expected": {
+      "office_name": "مؤسسة السلام للاستقدام",
+      "license_number": "7012345",
+      "contacts": [
+        {"type": "landline", "value": "+966112223344"},
+        {"type": "whatsapp", "value": "+966556667788"}
+      ]
+    }
+  },
+  {
+    "id": "h09_hisn",
+    "text": "إعلان رقم 845123\nمكتب الحصن التجريبي للاستقدام\nجوال المعلن: 0539990011\nتطبيق سوق التجربة - للدعم 920000222",
+    "expected": {
+      "office_name": "مكتب الحصن التجريبي للاستقدام",
+      "license_number": null,
+      "contacts": [
+        {"type": "mobile", "value": "+966539990011"},
+        {"type": "toll_free", "value": "+966920000222", "attribution": "unclear"}
+      ]
+    }
+  },
+  {
+    "id": "h10_palm",
+    "text": "Golden Palm Demo Recruitment\nWhatsApp +966 54 321 0000\nemail: info@goldenpalm-demo.example",
+    "expected": {
+      "office_name": "Golden Palm Demo Recruitment",
+      "license_number": null,
+      "contacts": [
+        {"type": "whatsapp", "value": "+966543210000"},
+        {"type": "email", "value": "info@goldenpalm-demo.example"}
+      ]
+    }
+  }
+]

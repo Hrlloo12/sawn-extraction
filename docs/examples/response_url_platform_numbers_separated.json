@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-url_platform_numbers_separated",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": null,
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "ok",
+  "input_type": "url",
+  "input_url": "http://127.0.0.1:8100/ads/ad01_waha.html",
+  "final_url": "http://127.0.0.1:8100/ads/ad01_waha.html",
+  "office_name": {
+    "raw_value": "مكتب واحة التجربة للاستقدام",
+    "normalized_value": "مكتب واحة التجربة للاستقدام",
+    "source": "page_text",
+    "evidence": {
+      "snippet": "المعلن: مكتب واحة التجربة للاستقدام",
+      "section": "listing",
+      "line": 12,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "license_number": {
+    "raw_value": "١٠١٢٣٤٥",
+    "normalized_value": "1012345",
+    "source": "page_text",
+    "evidence": {
+      "snippet": "ترخيص وزارة الموارد البشرية رقم ١٠١٢٣٤٥",
+      "section": "listing",
+      "line": 7,
+      "bbox": null,
+      "ocr_confidence": null,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "٠٥٥ ٠٠٠ ٠١٠١",
+      "normalized_value": "+966550000101",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "جوال وواتساب: ٠٥٥ ٠٠٠ ٠١٠١",
+        "section": "listing",
+        "line": 10,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "٠٥٥ ٠٠٠ ٠١٠١",
+      "normalized_value": "+966550000101",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "جوال وواتساب: ٠٥٥ ٠٠٠ ٠١٠١",
+        "section": "listing",
+        "line": 10,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "email",
+      "platform": null,
+      "raw_value": "info@waha-test.example",
+      "normalized_value": "info@waha-test.example",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "البريد: info@waha-test.example",
+        "section": "listing",
+        "line": 11,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [
+    {
+      "type": "toll_free",
+      "platform": null,
+      "raw_value": "920000111",
+      "normalized_value": "+966920000111",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "الدعم الفني: 920000111",
+        "section": "header",
+        "line": 4,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "platform",
+      "confidence": "medium"
+    },
+    {
+      "type": "toll_free",
+      "platform": null,
+      "raw_value": "800 111 0000",
+      "normalized_value": "+9668001110000",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "خدمة العملاء 800 111 0000",
+        "section": "footer",
+        "line": 16,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "platform",
+      "confidence": "medium"
+    },
+    {
+      "type": "email",
+      "platform": null,
+      "raw_value": "support@souq-demo.example",
+      "normalized_value": "support@souq-demo.example",
+      "source": "page_text",
+      "evidence": {
+        "snippet": "للتواصل مع المنصة: support@souq-demo.example",
+        "section": "footer",
+        "line": 17,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": null
+      },
+      "attribution": "platform",
+      "confidence": "high"
+    },
+    {
+      "type": "social",
+      "platform": "instagram",
+      "raw_value": "https://instagram.com/souq_demo_platform",
+      "normalized_value": "@souq_demo_platform",
+      "source": "page_link",
+      "evidence": {
+        "snippet": "انستقرام المنصة",
+        "section": "footer",
+        "line": null,
+        "bbox": null,
+        "ocr_confidence": null,
+        "href": "https://instagram.com/souq_demo_platform"
+      },
+      "attribution": "platform",
+      "confidence": "high"
+    }
+  ],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [],
+  "error": null,
+  "timing_ms": {
+    "read": 1135,
+    "extract": 15,
+    "total": 1151
+  }
+}

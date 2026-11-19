@@ -1,0 +1,260 @@
+{
+  "sha256": "1974f09f3b3db21edea7d0a69ff02e5cf050da701fedcd876fa77521785db027",
+  "image": "ad10_riyada.png",
+  "synthetic": true,
+  "note": "Simulated prebuilt-read output generated from the sample text; not a recorded Azure response.",
+  "analyzeResult": {
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-read",
+    "content": "مكتب استقدام الريادة التجريبي\nجوال: 0550001010 / 0570002020\nواتساب: 0570002020",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "width": 1000,
+        "height": 288,
+        "unit": "pixel",
+        "lines": [
+          {
+            "content": "مكتب استقدام الريادة التجريبي",
+            "polygon": [
+              516.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              516.0,
+              90.0
+            ],
+            "spans": [
+              {
+                "offset": 0,
+                "length": 29
+              }
+            ]
+          },
+          {
+            "content": "جوال: 0550001010 / 0570002020",
+            "polygon": [
+              447.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              155.0,
+              447.0,
+              155.0
+            ],
+            "spans": [
+              {
+                "offset": 30,
+                "length": 29
+              }
+            ]
+          },
+          {
+            "content": "واتساب: 0570002020",
+            "polygon": [
+              634.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              219.0,
+              634.0,
+              219.0
+            ],
+            "spans": [
+              {
+                "offset": 60,
+                "length": 18
+              }
+            ]
+          }
+        ],
+        "words": [
+          {
+            "content": "مكتب",
+            "polygon": [
+              516.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              516.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 0,
+              "length": 4
+            }
+          },
+          {
+            "content": "استقدام",
+            "polygon": [
+              516.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              516.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 5,
+              "length": 7
+            }
+          },
+          {
+            "content": "الريادة",
+            "polygon": [
+              516.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              516.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 13,
+              "length": 7
+            }
+          },
+          {
+            "content": "التجريبي",
+            "polygon": [
+              516.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              516.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 21,
+              "length": 8
+            }
+          },
+          {
+            "content": "جوال:",
+            "polygon": [
+              447.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              155.0,
+              447.0,
+              155.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 30,
+              "length": 5
+            }
+          },
+          {
+            "content": "0550001010",
+            "polygon": [
+              447.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              155.0,
+              447.0,
+              155.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 36,
+              "length": 10
+            }
+          },
+          {
+            "content": "/",
+            "polygon": [
+              447.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              155.0,
+              447.0,
+              155.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 47,
+              "length": 1
+            }
+          },
+          {
+            "content": "0570002020",
+            "polygon": [
+              447.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              155.0,
+              447.0,
+              155.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 49,
+              "length": 10
+            }
+          },
+          {
+            "content": "واتساب:",
+            "polygon": [
+              634.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              219.0,
+              634.0,
+              219.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 60,
+              "length": 7
+            }
+          },
+          {
+            "content": "0570002020",
+            "polygon": [
+              634.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              219.0,
+              634.0,
+              219.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 68,
+              "length": 10
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

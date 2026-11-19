@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.2",
+  "request_id": "example-image_ambiguous_number",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": "ocr",
+    "domain_status": null,
+    "vision_model": null
+  },
+  "status": "partial",
+  "input_type": "image",
+  "input_url": null,
+  "final_url": null,
+  "office_name": {
+    "raw_value": "مكتب نخيل التجربة للاستقدام",
+    "normalized_value": "مكتب نخيل التجربة للاستقدام",
+    "source": "ocr",
+    "evidence": {
+      "snippet": "مكتب نخيل التجربة للاستقدام",
+      "section": null,
+      "line": 1,
+      "bbox": [
+        527.0,
+        57.0,
+        952.0,
+        57.0,
+        952.0,
+        90.0,
+        527.0,
+        90.0
+      ],
+      "ocr_confidence": 0.86,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "license_number": {
+    "raw_value": "3056789",
+    "normalized_value": "3056789",
+    "source": "ocr",
+    "evidence": {
+      "snippet": "ترخيص رقم 3056789",
+      "section": null,
+      "line": 2,
+      "bbox": [
+        650.0,
+        122.0,
+        952.0,
+        122.0,
+        952.0,
+        154.0,
+        650.0,
+        154.0
+      ],
+      "ocr_confidence": 0.86,
+      "href": null
+    },
+    "confidence": "high"
+  },
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "05400?0505",
+      "normalized_value": null,
+      "source": "ocr",
+      "evidence": {
+        "snippet": "اتصال: 05400?0505",
+        "section": null,
+        "line": 3,
+        "bbox": [
+          663.0,
+          185.0,
+          952.0,
+          185.0,
+          952.0,
+          211.0,
+          663.0,
+          211.0
+        ],
+        "ocr_confidence": 0.32,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "low"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [
+    {
+      "code": "ambiguous_phone",
+      "message": "قراءة الرقم ناقصة أو ملتبسة، لم يُوحَّد",
+      "field": "contacts[0]"
+    }
+  ],
+  "error": null,
+  "timing_ms": {
+    "read": 23,
+    "extract": 3,
+    "total": 26
+  }
+}

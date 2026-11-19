@@ -1,0 +1,13 @@
+[project]
+name = "sawn-extraction"
+version = "1.0.0"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "team_data: يحتاج حزمة الفريق في team_data/",
+    "team_images: يحتاج صور الحالات في samples/team_images/",
+]

@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.2",
+  "request_id": "6995f2f9de3b41cb81f80a9629b12922",
+  "extractor": {
+    "name": "rules",
+    "model": null,
+    "requested": "rules",
+    "fallback_reason": null,
+    "domain_reader": "gpt_vision",
+    "domain_status": "none_found",
+    "vision_model": "gpt-5-mini"
+  },
+  "status": "ok",
+  "input_type": "image",
+  "input_url": null,
+  "final_url": null,
+  "office_name": {
+    "raw_value": "مكتب استقدام الريادة التجريبي",
+    "normalized_value": "مكتب استقدام الريادة التجريبي",
+    "source": "ocr",
+    "evidence": {
+      "snippet": "مكتب استقدام الريادة التجريبي",
+      "section": null,
+      "line": 1,
+      "bbox": [
+        518.0,
+        57.0,
+        951.0,
+        57.0,
+        951.0,
+        90.0,
+        518.0,
+        90.0
+      ],
+      "ocr_confidence": 0.871,
+      "href": null
+    },
+    "confidence": "medium"
+  },
+  "license_number": null,
+  "contacts": [
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "0570002020",
+      "normalized_value": "+966570002020",
+      "source": "ocr",
+      "evidence": {
+        "snippet": "جوال: 0570002020 / 0550001010 واتساب: 0570002020",
+        "section": null,
+        "line": 2,
+        "bbox": [
+          448.0,
+          121.0,
+          951.0,
+          121.0,
+          951.0,
+          218.0,
+          448.0,
+          218.0
+        ],
+        "ocr_confidence": 0.922,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "mobile",
+      "platform": null,
+      "raw_value": "0550001010",
+      "normalized_value": "+966550001010",
+      "source": "ocr",
+      "evidence": {
+        "snippet": "جوال: 0570002020 / 0550001010 واتساب: 0570002020",
+        "section": null,
+        "line": 2,
+        "bbox": [
+          448.0,
+          121.0,
+          951.0,
+          121.0,
+          951.0,
+          218.0,
+          448.0,
+          218.0
+        ],
+        "ocr_confidence": 0.932,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    },
+    {
+      "type": "whatsapp",
+      "platform": null,
+      "raw_value": "0570002020",
+      "normalized_value": "+966570002020",
+      "source": "ocr",
+      "evidence": {
+        "snippet": "جوال: 0570002020 / 0550001010 واتساب: 0570002020",
+        "section": null,
+        "line": 2,
+        "bbox": [
+          448.0,
+          121.0,
+          951.0,
+          121.0,
+          951.0,
+          218.0,
+          448.0,
+          218.0
+        ],
+        "ocr_confidence": 0.933,
+        "href": null
+      },
+      "attribution": "advertiser",
+      "confidence": "high"
+    }
+  ],
+  "platform_contacts": [],
+  "ibans": [],
+  "account_holder": null,
+  "payment": {
+    "payment_request": {
+      "value": false,
+      "evidence": []
+    },
+    "personal_account": {
+      "value": false,
+      "evidence": []
+    },
+    "new_account_claim": {
+      "value": false,
+      "evidence": []
+    },
+    "urgency_phrases": []
+  },
+  "warnings": [],
+  "error": null,
+  "timing_ms": {
+    "read": 2282,
+    "extract": 347,
+    "total": 2629
+  }
+}

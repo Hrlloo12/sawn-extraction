@@ -1,0 +1,478 @@
+{
+  "sha256": "b78c0563714900374c2333672171d765c7b66df079dbadfc3acff233a9cca8f0",
+  "image": "ad06_bayan.png",
+  "synthetic": true,
+  "note": "Simulated prebuilt-read output generated from the sample text; not a recorded Azure response.",
+  "analyzeResult": {
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-read",
+    "content": "Bayan Trial Recruitment Office\nLicensed by HRSD - License No: 4067890\nCall: +966 56 000 0606\nWhatsApp: wa.me/966560000606\nEmail: hello@bayan-trial.example",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "width": 1000,
+        "height": 416,
+        "unit": "pixel",
+        "lines": [
+          {
+            "content": "Bayan Trial Recruitment Office",
+            "polygon": [
+              491.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              491.0,
+              90.0
+            ],
+            "spans": [
+              {
+                "offset": 0,
+                "length": 30
+              }
+            ]
+          },
+          {
+            "content": "Licensed by HRSD - License No: 4067890",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "spans": [
+              {
+                "offset": 31,
+                "length": 38
+              }
+            ]
+          },
+          {
+            "content": "Call: +966 56 000 0606",
+            "polygon": [
+              589.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              589.0,
+              211.0
+            ],
+            "spans": [
+              {
+                "offset": 70,
+                "length": 22
+              }
+            ]
+          },
+          {
+            "content": "WhatsApp: wa.me/966560000606",
+            "polygon": [
+              436.0,
+              249.0,
+              952.0,
+              249.0,
+              952.0,
+              282.0,
+              436.0,
+              282.0
+            ],
+            "spans": [
+              {
+                "offset": 93,
+                "length": 28
+              }
+            ]
+          },
+          {
+            "content": "Email: hello@bayan-trial.example",
+            "polygon": [
+              448.0,
+              313.0,
+              952.0,
+              313.0,
+              952.0,
+              346.0,
+              448.0,
+              346.0
+            ],
+            "spans": [
+              {
+                "offset": 122,
+                "length": 32
+              }
+            ]
+          }
+        ],
+        "words": [
+          {
+            "content": "Bayan",
+            "polygon": [
+              491.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              491.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 0,
+              "length": 5
+            }
+          },
+          {
+            "content": "Trial",
+            "polygon": [
+              491.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              491.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 6,
+              "length": 5
+            }
+          },
+          {
+            "content": "Recruitment",
+            "polygon": [
+              491.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              491.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 12,
+              "length": 11
+            }
+          },
+          {
+            "content": "Office",
+            "polygon": [
+              491.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              491.0,
+              90.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 24,
+              "length": 6
+            }
+          },
+          {
+            "content": "Licensed",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 31,
+              "length": 8
+            }
+          },
+          {
+            "content": "by",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 40,
+              "length": 2
+            }
+          },
+          {
+            "content": "HRSD",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 43,
+              "length": 4
+            }
+          },
+          {
+            "content": "-",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 48,
+              "length": 1
+            }
+          },
+          {
+            "content": "License",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 50,
+              "length": 7
+            }
+          },
+          {
+            "content": "No:",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 58,
+              "length": 3
+            }
+          },
+          {
+            "content": "4067890",
+            "polygon": [
+              325.0,
+              121.0,
+              952.0,
+              121.0,
+              952.0,
+              154.0,
+              325.0,
+              154.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 62,
+              "length": 7
+            }
+          },
+          {
+            "content": "Call:",
+            "polygon": [
+              589.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              589.0,
+              211.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 70,
+              "length": 5
+            }
+          },
+          {
+            "content": "+966",
+            "polygon": [
+              589.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              589.0,
+              211.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 76,
+              "length": 4
+            }
+          },
+          {
+            "content": "56",
+            "polygon": [
+              589.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              589.0,
+              211.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 81,
+              "length": 2
+            }
+          },
+          {
+            "content": "000",
+            "polygon": [
+              589.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              589.0,
+              211.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 84,
+              "length": 3
+            }
+          },
+          {
+            "content": "0606",
+            "polygon": [
+              589.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              589.0,
+              211.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 88,
+              "length": 4
+            }
+          },
+          {
+            "content": "WhatsApp:",
+            "polygon": [
+              436.0,
+              249.0,
+              952.0,
+              249.0,
+              952.0,
+              282.0,
+              436.0,
+              282.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 93,
+              "length": 9
+            }
+          },
+          {
+            "content": "wa.me/966560000606",
+            "polygon": [
+              436.0,
+              249.0,
+              952.0,
+              249.0,
+              952.0,
+              282.0,
+              436.0,
+              282.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 103,
+              "length": 18
+            }
+          },
+          {
+            "content": "Email:",
+            "polygon": [
+              448.0,
+              313.0,
+              952.0,
+              313.0,
+              952.0,
+              346.0,
+              448.0,
+              346.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 122,
+              "length": 6
+            }
+          },
+          {
+            "content": "hello@bayan-trial.example",
+            "polygon": [
+              448.0,
+              313.0,
+              952.0,
+              313.0,
+              952.0,
+              346.0,
+              448.0,
+              346.0
+            ],
+            "confidence": 0.97,
+            "span": {
+              "offset": 129,
+              "length": 25
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sawn/matcher_input.schema.json",
+  "title": "Sawn matcher input",
+  "description": "الصيغة التي يستلمها team_data/matcher.py. مأخوذة من «صيغة الاستخراج المطلوبة من هلا» في team_data/README.md، مع payment_request الإضافي الذي يتجاهله المطابِق الحالي.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "office_name",
+    "phones",
+    "urls",
+    "ibans",
+    "account_holder",
+    "personal_account",
+    "new_account_claim",
+    "urgency_phrases"
+  ],
+  "properties": {
+    "office_name": {
+      "type": "string",
+      "description": "كما ورد، أو \"\" إذا غاب. المطابقة التقريبية في المطابِق."
+    },
+    "phones": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^966\\d{8,10}$"
+      },
+      "description": "9665XXXXXXXX للجوال و9661XXXXXXXX للثابت، بدون +. يشمل أرقام الواتساب."
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "الدومين فقط بلا https:// ولا www. ولا مسار."
+    },
+    "ibans": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SA\\d{22}$"
+      }
+    },
+    "account_holder": {
+      "type": "string",
+      "description": "اسم صاحب الحساب بلا ألقاب، أو \"\"."
+    },
+    "personal_account": {
+      "type": "boolean"
+    },
+    "new_account_claim": {
+      "type": "boolean"
+    },
+    "urgency_phrases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "payment_request": {
+      "type": "boolean",
+      "description": "إضافي، غير موجود في README الفريق."
+    },
+    "ocr_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "إضافي: الدومينات من urls التي قُرئت من صورة (source=ocr). يتجاهلها المطابِق الحالي، وتستخدمها integration/demo_guards.py."
+    },
+    "unconfirmed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "raw": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "إضافي: قنوات قُرئت لكن قراءتها ملتبسة (normalized_value = null) وتنتظر تأكيد المستخدم. لا تدخل المطابقة."
+    }
+  }
+}

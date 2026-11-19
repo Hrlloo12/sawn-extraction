@@ -1,0 +1,353 @@
+[
+  {
+    "id": "ad01_waha",
+    "case": "إعلان كامل: اسم مكتب، ترخيص، أرقام عربية، جوال وواتساب، بريد، صفحة فيها أرقام دعم المنصة",
+    "title": "عاملات منزلية من الفلبين وكينيا",
+    "text": [
+      "مكتب واحة التجربة للاستقدام",
+      "ترخيص وزارة الموارد البشرية رقم ١٠١٢٣٤٥",
+      "متوفر عاملات منزلية من الفلبين وكينيا بخبرة سابقة",
+      "التكلفة 14500 ريال شاملة التذاكر",
+      "جوال وواتساب: ٠٥٥ ٠٠٠ ٠١٠١",
+      "البريد: info@waha-test.example"
+    ],
+    "page": {
+      "layout": "sections",
+      "advertiser_box": "مكتب واحة التجربة للاستقدام",
+      "buttons": [
+        {"label": "تواصل واتساب", "href": "https://wa.me/966550000101"},
+        {"label": "اتصال", "href": "tel:+966550000101"}
+      ]
+    },
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب واحة التجربة للاستقدام",
+        "license_number": "1012345",
+        "contacts": [
+          {"type": "mobile", "value": "+966550000101"},
+          {"type": "whatsapp", "value": "+966550000101"},
+          {"type": "email", "value": "info@waha-test.example"}
+        ],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad02_sahil",
+    "case": "زر واتساب في الصفحة بدون رقم ظاهر في النص",
+    "title": "سائقين خاصين وطباخين",
+    "text": [
+      "شركة ساحل التجربة للاستقدام",
+      "نوفر سائقين خاصين وطباخين بعقود نظامية",
+      "للتواصل اضغط زر واتساب في الإعلان",
+      "الموقع: www.sahil-test.example"
+    ],
+    "page": {
+      "layout": "sections",
+      "advertiser_box": "شركة ساحل التجربة للاستقدام",
+      "buttons": [
+        {"label": "تواصل واتساب", "href": "https://api.whatsapp.com/send?phone=966560000202&text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85"}
+      ]
+    },
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "شركة ساحل التجربة للاستقدام",
+        "license_number": null,
+        "contacts": [
+          {"type": "website", "value": "sahil-test.example"}
+        ],
+        "platform_contacts": []
+      },
+      "url": {
+        "add_contacts": [{"type": "whatsapp", "value": "+966560000202"}],
+        "platform_contacts": "standard"
+      }
+    }
+  },
+  {
+    "id": "ad03_durra",
+    "case": "أكثر من وسيلة تواصل: جوال دولي، هاتف ثابت، بريد، موقع، سناب، وزر انستقرام في الصفحة",
+    "title": "استقدام عمالة منزلية بعقود موثقة",
+    "text": [
+      "مؤسسة درة التجربة للاستقدام",
+      "License No. 2034567",
+      "جوال: +966 57 000 0303",
+      "هاتف المكتب: 011 456 0303",
+      "info@durra-test.example | www.durra-test.example",
+      "سناب: @durra_test"
+    ],
+    "page": {
+      "layout": "sections",
+      "advertiser_box": "مؤسسة درة التجربة للاستقدام",
+      "buttons": [
+        {"label": "حسابنا في انستقرام", "href": "https://www.instagram.com/durra.test/?igshid=demo123"}
+      ]
+    },
+    "image": {"variant": "clean", "split": [{"line": 2, "after": "جوال:"}]},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مؤسسة درة التجربة للاستقدام",
+        "license_number": "2034567",
+        "contacts": [
+          {"type": "mobile", "value": "+966570000303"},
+          {"type": "landline", "value": "+966114560303"},
+          {"type": "email", "value": "info@durra-test.example"},
+          {"type": "website", "value": "durra-test.example"},
+          {"type": "social", "value": "@durra_test", "platform": "snapchat"}
+        ],
+        "platform_contacts": []
+      },
+      "url": {
+        "add_contacts": [{"type": "social", "value": "@durra.test", "platform": "instagram"}],
+        "platform_contacts": "standard"
+      }
+    }
+  },
+  {
+    "id": "ad04_noname",
+    "case": "اسم المكتب غائب",
+    "title": "عاملة من إندونيسيا للتنازل",
+    "text": [
+      "متوفر عاملات من إندونيسيا للتنازل",
+      "راتب 1500 ريال - العمر 28 سنة",
+      "للتواصل واتساب 0530000404"
+    ],
+    "page": {"layout": "sections", "advertiser_box": null, "buttons": []},
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "partial",
+        "office_name": null,
+        "license_number": null,
+        "contacts": [{"type": "whatsapp", "value": "+966530000404"}],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad05_nakheel",
+    "case": "صورة غير واضحة: رقم الجوال مقروء جزئيًا في OCR",
+    "title": "عاملات منزلية بخبرة",
+    "text": [
+      "مكتب نخيل التجربة للاستقدام",
+      "ترخيص رقم 3056789",
+      "اتصال: 0540000505"
+    ],
+    "page": {"layout": "sections", "advertiser_box": "مكتب نخيل التجربة للاستقدام", "buttons": []},
+    "image": {
+      "variant": "blurry",
+      "ocr_overrides": [
+        {"line": 2, "content": "اتصال: 05400?0505", "low_confidence_words": {"05400?0505": 0.32}}
+      ]
+    },
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب نخيل التجربة للاستقدام",
+        "license_number": "3056789",
+        "contacts": [{"type": "mobile", "value": "+966540000505"}],
+        "platform_contacts": []
+      },
+      "image": {
+        "status": "partial",
+        "contacts": [{"type": "mobile", "value": null}]
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad06_bayan",
+    "case": "إعلان بالإنجليزية مع رابط wa.me داخل النص",
+    "title": "Housemaids and drivers",
+    "text": [
+      "Bayan Trial Recruitment Office",
+      "Licensed by HRSD - License No: 4067890",
+      "Call: +966 56 000 0606",
+      "WhatsApp: wa.me/966560000606",
+      "Email: hello@bayan-trial.example"
+    ],
+    "page": {"layout": "sections", "advertiser_box": "Bayan Trial Recruitment Office", "buttons": []},
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "Bayan Trial Recruitment Office",
+        "license_number": "4067890",
+        "contacts": [
+          {"type": "mobile", "value": "+966560000606"},
+          {"type": "whatsapp", "value": "+966560000606"},
+          {"type": "email", "value": "hello@bayan-trial.example"}
+        ],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad07_jusoor",
+    "case": "صفحة بدون أقسام واضحة: نسبة رقم المعلن غير محسومة، وأرقام الدعم مميزة بالكلمات",
+    "title": "عاملات من سريلانكا وبنغلاديش",
+    "text": [
+      "مكتب جسور التجربة للاستقدام",
+      "عاملات من سريلانكا وبنغلاديش",
+      "جوال: 0580000707"
+    ],
+    "page": {"layout": "flat", "advertiser_box": null, "buttons": []},
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب جسور التجربة للاستقدام",
+        "license_number": null,
+        "contacts": [{"type": "mobile", "value": "+966580000707"}],
+        "platform_contacts": []
+      },
+      "url": {
+        "contacts": [{"type": "mobile", "value": "+966580000707", "attribution": "unclear"}],
+        "platform_contacts": [
+          {"type": "toll_free", "value": "+966920000111"},
+          {"type": "toll_free", "value": "+9668001110000"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "ad08_ofuq",
+    "case": "رقم ترخيص وسجل تجاري ورقم إعلان قريبة من صيغ الجوال",
+    "title": "مربيات وعاملات منزلية",
+    "text": [
+      "مكتب أفق التجربة للاستقدام",
+      "ترخيص رقم: 5078901",
+      "السجل التجاري 1010000808",
+      "رقم الإعلان 584512376",
+      "جوال 0590000808"
+    ],
+    "page": {"layout": "sections", "advertiser_box": "مكتب أفق التجربة للاستقدام", "buttons": []},
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب أفق التجربة للاستقدام",
+        "license_number": "5078901",
+        "contacts": [{"type": "mobile", "value": "+966590000808"}],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad09_sidra",
+    "case": "نص منسوخ يحتوي رقم دعم المنصة مع رقم المعلن",
+    "title": "عاملات منزلية بعقود سنوية",
+    "text": [
+      "مكتب سدرة التجربة للاستقدام",
+      "واتساب: 0500000909",
+      "للدعم الفني للمنصة: 920000111"
+    ],
+    "page": {
+      "layout": "sections",
+      "advertiser_box": "مكتب سدرة التجربة للاستقدام",
+      "buttons": [],
+      "move_to_footer": [2]
+    },
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب سدرة التجربة للاستقدام",
+        "license_number": null,
+        "contacts": [
+          {"type": "whatsapp", "value": "+966500000909"},
+          {"type": "toll_free", "value": "+966920000111", "attribution": "unclear"}
+        ],
+        "platform_contacts": []
+      },
+      "url": {
+        "contacts": [{"type": "whatsapp", "value": "+966500000909"}],
+        "platform_contacts": "standard"
+      }
+    }
+  },
+  {
+    "id": "ad10_riyada",
+    "case": "رقمان للجوال في سطر واحد ورقم واتساب، واسم بصيغة «مكتب استقدام ...»",
+    "title": "سائقين وعاملات",
+    "text": [
+      "مكتب استقدام الريادة التجريبي",
+      "جوال: 0550001010 / 0570002020",
+      "واتساب: 0570002020"
+    ],
+    "page": {"layout": "sections", "advertiser_box": "مكتب استقدام الريادة التجريبي", "buttons": []},
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب استقدام الريادة التجريبي",
+        "license_number": null,
+        "contacts": [
+          {"type": "mobile", "value": "+966550001010"},
+          {"type": "mobile", "value": "+966570002020"},
+          {"type": "whatsapp", "value": "+966570002020"}
+        ],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad11_marsa",
+    "case": "أرقام غير هاتفية (أسعار، تواريخ، أعمار) مع رقم بصيغة 00966",
+    "title": "عروض استقدام",
+    "text": [
+      "شركة مرسى التجربة للاستقدام",
+      "أسعار تبدأ من 9,500 ريال - مدة الاستقدام 60 يومًا",
+      "تاريخ الإعلان 2025/03/14 - العمر 25-35",
+      "للتواصل: 00966 55 000 1111"
+    ],
+    "page": {"layout": "sections", "advertiser_box": "شركة مرسى التجربة للاستقدام", "buttons": []},
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "شركة مرسى التجربة للاستقدام",
+        "license_number": null,
+        "contacts": [{"type": "mobile", "value": "+966550001111"}],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  },
+  {
+    "id": "ad12_waha_fake",
+    "case": "انتحال: اسم مكتب واحة التجربة ورقم ترخيصه مع رقم واتساب مختلف",
+    "title": "عروض خاصة على استقدام العاملات",
+    "text": [
+      "مكتب واحة التجربة للاستقدام",
+      "عروض خاصة على استقدام العاملات - ترخيص رقم 1012345",
+      "واتساب فقط: 0500009999"
+    ],
+    "page": {
+      "layout": "sections",
+      "advertiser_box": "مكتب واحة التجربة للاستقدام",
+      "buttons": [{"label": "واتساب", "href": "https://wa.me/966500009999"}]
+    },
+    "image": {"variant": "clean"},
+    "expected": {
+      "text": {
+        "status": "ok",
+        "office_name": "مكتب واحة التجربة للاستقدام",
+        "license_number": "1012345",
+        "contacts": [{"type": "whatsapp", "value": "+966500009999"}],
+        "platform_contacts": []
+      },
+      "url": {"platform_contacts": "standard"}
+    }
+  }
+]

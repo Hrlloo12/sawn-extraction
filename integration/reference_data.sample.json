@@ -1,0 +1,39 @@
+{
+  "_note": "بيانات مرجعية مصطنعة لاختبار الدمج فقط. كل الأسماء والأرقام والنطاقات وهمية. تُستبدل بقاعدة الفريق عند الدمج.",
+  "offices": [
+    {
+      "office_id": "OFF-001",
+      "name": "مكتب واحة التجربة للاستقدام",
+      "license_number": "1012345",
+      "channels": [
+        {"type": "mobile", "value": "+966550000101"},
+        {"type": "whatsapp", "value": "+966550000101"},
+        {"type": "email", "value": "info@waha-test.example"}
+      ]
+    },
+    {
+      "office_id": "OFF-002",
+      "name": "مكتب استقدام الريادة التجريبي",
+      "license_number": null,
+      "channels": [
+        {"type": "mobile", "value": "+966550001010"}
+      ]
+    },
+    {
+      "office_id": "OFF-003",
+      "name": "مكتب سدرة التجربة للاستقدام",
+      "license_number": "8011223",
+      "channels": [
+        {"type": "whatsapp", "value": "+966500000909"}
+      ]
+    }
+  ],
+  "channel_evidence": [
+    {
+      "type": "whatsapp",
+      "value": "+966500009999",
+      "registered_to": "مؤسسة الضوء التجريبية للخدمات",
+      "evidence": "القناة مسجلة لجهة أخرى في البيانات التجريبية"
+    }
+  ]
+}

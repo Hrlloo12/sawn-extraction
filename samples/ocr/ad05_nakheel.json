@@ -1,0 +1,242 @@
+{
+  "sha256": "7de76fc6093f9410f7f91c7bf55cfd72ac396c0e14ad8c9cb36d3fab8546e48f",
+  "image": "ad05_nakheel.png",
+  "synthetic": true,
+  "note": "Simulated prebuilt-read output generated from the sample text; not a recorded Azure response.",
+  "analyzeResult": {
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-read",
+    "content": "مكتب نخيل التجربة للاستقدام\nترخيص رقم 3056789\nاتصال: 05400?0505",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "width": 1000,
+        "height": 288,
+        "unit": "pixel",
+        "lines": [
+          {
+            "content": "مكتب نخيل التجربة للاستقدام",
+            "polygon": [
+              527.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              527.0,
+              90.0
+            ],
+            "spans": [
+              {
+                "offset": 0,
+                "length": 27
+              }
+            ]
+          },
+          {
+            "content": "ترخيص رقم 3056789",
+            "polygon": [
+              650.0,
+              122.0,
+              952.0,
+              122.0,
+              952.0,
+              154.0,
+              650.0,
+              154.0
+            ],
+            "spans": [
+              {
+                "offset": 28,
+                "length": 17
+              }
+            ]
+          },
+          {
+            "content": "اتصال: 05400?0505",
+            "polygon": [
+              663.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              663.0,
+              211.0
+            ],
+            "spans": [
+              {
+                "offset": 46,
+                "length": 17
+              }
+            ]
+          }
+        ],
+        "words": [
+          {
+            "content": "مكتب",
+            "polygon": [
+              527.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              527.0,
+              90.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 0,
+              "length": 4
+            }
+          },
+          {
+            "content": "نخيل",
+            "polygon": [
+              527.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              527.0,
+              90.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 5,
+              "length": 4
+            }
+          },
+          {
+            "content": "التجربة",
+            "polygon": [
+              527.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              527.0,
+              90.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 10,
+              "length": 7
+            }
+          },
+          {
+            "content": "للاستقدام",
+            "polygon": [
+              527.0,
+              57.0,
+              952.0,
+              57.0,
+              952.0,
+              90.0,
+              527.0,
+              90.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 18,
+              "length": 9
+            }
+          },
+          {
+            "content": "ترخيص",
+            "polygon": [
+              650.0,
+              122.0,
+              952.0,
+              122.0,
+              952.0,
+              154.0,
+              650.0,
+              154.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 28,
+              "length": 5
+            }
+          },
+          {
+            "content": "رقم",
+            "polygon": [
+              650.0,
+              122.0,
+              952.0,
+              122.0,
+              952.0,
+              154.0,
+              650.0,
+              154.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 34,
+              "length": 3
+            }
+          },
+          {
+            "content": "3056789",
+            "polygon": [
+              650.0,
+              122.0,
+              952.0,
+              122.0,
+              952.0,
+              154.0,
+              650.0,
+              154.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 38,
+              "length": 7
+            }
+          },
+          {
+            "content": "اتصال:",
+            "polygon": [
+              663.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              663.0,
+              211.0
+            ],
+            "confidence": 0.86,
+            "span": {
+              "offset": 46,
+              "length": 6
+            }
+          },
+          {
+            "content": "05400?0505",
+            "polygon": [
+              663.0,
+              185.0,
+              952.0,
+              185.0,
+              952.0,
+              211.0,
+              663.0,
+              211.0
+            ],
+            "confidence": 0.32,
+            "span": {
+              "offset": 53,
+              "length": 10
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "_note": "حالات دمج مشتركة: مخرجات الاستخراج الفعلية + البيانات المرجعية التجريبية → النتيجة المتوقعة من قواعد المطابقة. قرار المطابقة نفسه في خدمة فهد.",
+  "outcomes": {
+    "belongs": "تعود للجهة",
+    "not_belongs": "توجد أدلة أنها لا تعود للجهة",
+    "insufficient": "المعلومات غير كافية"
+  },
+  "reference_data": "integration/reference_data.sample.json",
+  "cases": [
+    {
+      "id": "M1_belongs",
+      "extraction_output": "integration/extraction_outputs/ad01_waha_url.json",
+      "demo_input": {"input_type": "url", "value": "http://127.0.0.1:8100/ads/ad01_waha.html"},
+      "office_name": "مكتب واحة التجربة للاستقدام",
+      "channels": [
+        {"type": "whatsapp", "value": "+966550000101", "expected": "belongs", "reason": "القناة ضمن قنوات OFF-001 المسجلة"},
+        {"type": "mobile", "value": "+966550000101", "expected": "belongs", "reason": "القناة ضمن قنوات OFF-001 المسجلة"},
+        {"type": "email", "value": "info@waha-test.example", "expected": "belongs", "reason": "البريد ضمن قنوات OFF-001 المسجلة"}
+      ],
+      "ignored": "platform_contacts (أرقام دعم المنصة) لا تدخل المطابقة"
+    },
+    {
+      "id": "M2_not_belongs",
+      "extraction_output": "integration/extraction_outputs/ad12_waha_fake_url.json",
+      "demo_input": {"input_type": "url", "value": "http://127.0.0.1:8100/ads/ad12_waha_fake.html"},
+      "office_name": "مكتب واحة التجربة للاستقدام",
+      "channels": [
+        {
+          "type": "whatsapp",
+          "value": "+966500009999",
+          "expected": "not_belongs",
+          "reason": "الرقم مسجل لجهة أخرى في channel_evidence، والمكتب له رقم واتساب رسمي مختلف"
+        }
+      ]
+    },
+    {
+      "id": "M3_insufficient",
+      "extraction_output": "integration/extraction_outputs/ad10_riyada_text.json",
+      "demo_input": {"input_type": "text", "value_file": "samples/text/ad10_riyada.txt"},
+      "office_name": "مكتب استقدام الريادة التجريبي",
+      "channels": [
+        {"type": "mobile", "value": "+966550001010", "expected": "belongs", "reason": "الرقم ضمن قنوات OFF-002"},
+        {"type": "mobile", "value": "+966570002020", "expected": "insufficient", "reason": "الرقم غير موجود في السجل ولا يوجد دليل أنه لجهة أخرى"},
+        {"type": "whatsapp", "value": "+966570002020", "expected": "insufficient", "reason": "غياب القيمة من السجل وحده لا يكفي للحكم"}
+      ]
+    },
+    {
+      "id": "M4_unclear_attribution",
+      "extraction_output": "integration/extraction_outputs/ad09_sidra_text.json",
+      "demo_input": {"input_type": "text", "value_file": "samples/text/ad09_sidra.txt"},
+      "office_name": "مكتب سدرة التجربة للاستقدام",
+      "channels": [
+        {"type": "whatsapp", "value": "+966500000909", "expected": "belongs", "reason": "الرقم ضمن قنوات OFF-003"},
+        {
+          "type": "toll_free",
+          "value": "+966920000111",
+          "expected": "to_be_agreed",
+          "reason": "attribution=unclear (رقم دعم منصة منسوخ مع النص). يحتاج اتفاقًا: هل تُستبعد القنوات unclear أم تُطابق؟"
+        }
+      ]
+    }
+  ]
+}
